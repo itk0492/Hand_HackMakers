@@ -1,17 +1,19 @@
 package com.example.hand_hackmackers
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+//import androidx.appcompat.app.AppCompatActivity
+import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
+import android.view.View
 import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.view.isVisible
-import com.rommansabbir.animationx.Flip
-import com.rommansabbir.animationx.animationXFlip
+//import androidx.core.view.isVisible
+//import com.rommansabbir.animationx.Flip
+//import com.rommansabbir.animationx.animationXFlip
 import java.util.*
 
 class JuegoNum : AppCompatActivity() {
@@ -48,7 +50,7 @@ class JuegoNum : AppCompatActivity() {
 
 
         card1.setOnClickListener {
-            card1.animationXFlip(Flip.FLIP_IN_Y)
+           // card1.animationXFlip(Flip.FLIP_IN_Y)
             card1.setImageResource(uno[numeroRandom])
 
             dioclick=dioclick+1
@@ -60,8 +62,10 @@ class JuegoNum : AppCompatActivity() {
                 if (dioclick == 2) {
                     t2=1
                     if (t1 == t2) {
-                        card1.isVisible = false
-                        card6.isVisible = false
+                        //card1.isVisible = false
+                        //card6.isVisible = false
+                        card1.visibility = View.GONE
+                        card6.visibility = View.GONE
                         dioclick = 0
                         t1=0
                         t2=0
@@ -74,14 +78,14 @@ class JuegoNum : AppCompatActivity() {
                         card6.setImageResource(R.drawable.icon_card)
                         card7.setImageResource(R.drawable.icon_card)
                         card8.setImageResource(R.drawable.icon_card)
-                        card1.animationXFlip(Flip.FLIP_IN_X)
+                        /*card1.animationXFlip(Flip.FLIP_IN_X)
                         card2.animationXFlip(Flip.FLIP_IN_X)
                         card3.animationXFlip(Flip.FLIP_IN_X)
                         card4.animationXFlip(Flip.FLIP_IN_X)
                         card5.animationXFlip(Flip.FLIP_IN_X)
                         card6.animationXFlip(Flip.FLIP_IN_X)
                         card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)
+                        card8.animationXFlip(Flip.FLIP_IN_X)*/
                         dioclick = 0
                         t1=0
                         t2=0
@@ -94,7 +98,7 @@ class JuegoNum : AppCompatActivity() {
         }
 
         card2.setOnClickListener {
-            card2.animationXFlip(Flip.FLIP_IN_Y)
+           // card2.animationXFlip(Flip.FLIP_IN_Y)
             card2.setImageResource(dos[numeroRandom])
 
             dioclick=dioclick+1
@@ -105,8 +109,10 @@ class JuegoNum : AppCompatActivity() {
                 if (dioclick == 2) {
                     t2=2
                     if (t1 == t2) {
-                        card2.isVisible = false
-                        card8.isVisible = false
+                        //card2.isVisible = false
+                        //card8.isVisible = false
+                        card2.visibility = View.GONE
+                        card8.visibility = View.GONE
                         dioclick = 0
                         t1=0
                         t2=0
@@ -120,14 +126,14 @@ class JuegoNum : AppCompatActivity() {
                         card6.setImageResource(R.drawable.icon_card)
                         card7.setImageResource(R.drawable.icon_card)
                         card8.setImageResource(R.drawable.icon_card)
-                        card1.animationXFlip(Flip.FLIP_IN_X)
+                        /*card1.animationXFlip(Flip.FLIP_IN_X)
                         card2.animationXFlip(Flip.FLIP_IN_X)
                         card3.animationXFlip(Flip.FLIP_IN_X)
                         card4.animationXFlip(Flip.FLIP_IN_X)
                         card5.animationXFlip(Flip.FLIP_IN_X)
                         card6.animationXFlip(Flip.FLIP_IN_X)
                         card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)
+                        card8.animationXFlip(Flip.FLIP_IN_X)*/
                         dioclick = 0
                         t1=0
                         t2=0
@@ -140,7 +146,7 @@ class JuegoNum : AppCompatActivity() {
         }
 
         card3.setOnClickListener {
-            card3.animationXFlip(Flip.FLIP_IN_Y)
+            //card3.animationXFlip(Flip.FLIP_IN_Y)
             card3.setImageResource(tres[numeroRandom])
 
             dioclick=dioclick+1
@@ -151,8 +157,10 @@ class JuegoNum : AppCompatActivity() {
                 if (dioclick == 2) {
                     t2=3
                     if (t1 == t2) {
-                        card3.isVisible = false
-                        card7.isVisible = false
+                        //card3.isVisible = false
+                        //card7.isVisible = false
+                        card3.visibility = View.GONE
+                        card7.visibility = View.GONE
                         dioclick = 0
                         t1=0
                         t2=0
@@ -166,14 +174,14 @@ class JuegoNum : AppCompatActivity() {
                         card6.setImageResource(R.drawable.icon_card)
                         card7.setImageResource(R.drawable.icon_card)
                         card8.setImageResource(R.drawable.icon_card)
-                        card1.animationXFlip(Flip.FLIP_IN_X)
+                        /*card1.animationXFlip(Flip.FLIP_IN_X)
                         card2.animationXFlip(Flip.FLIP_IN_X)
                         card3.animationXFlip(Flip.FLIP_IN_X)
                         card4.animationXFlip(Flip.FLIP_IN_X)
                         card5.animationXFlip(Flip.FLIP_IN_X)
                         card6.animationXFlip(Flip.FLIP_IN_X)
                         card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)
+                        card8.animationXFlip(Flip.FLIP_IN_X)*/
                         dioclick = 0
                         t1=0
                         t2=0
@@ -186,7 +194,7 @@ class JuegoNum : AppCompatActivity() {
         }
 
         card4.setOnClickListener {
-            card4.animationXFlip(Flip.FLIP_IN_Y)
+            //card4.animationXFlip(Flip.FLIP_IN_Y)
             card4.setImageResource(cuatro[numeroRandom])
 
             dioclick=dioclick+1
@@ -197,8 +205,10 @@ class JuegoNum : AppCompatActivity() {
                 if (dioclick == 2) {
                     t2=4
                     if (t1 == t2) {
-                        card4.isVisible = false
-                        card5.isVisible = false
+                        //card4.isVisible = false
+                        //card5.isVisible = false
+                        card4.visibility = View.GONE
+                        card5.visibility = View.GONE
                         dioclick = 0
                         t1=0
                         t2=0
@@ -212,14 +222,14 @@ class JuegoNum : AppCompatActivity() {
                         card6.setImageResource(R.drawable.icon_card)
                         card7.setImageResource(R.drawable.icon_card)
                         card8.setImageResource(R.drawable.icon_card)
-                        card1.animationXFlip(Flip.FLIP_IN_X)
+                        /*card1.animationXFlip(Flip.FLIP_IN_X)
                         card2.animationXFlip(Flip.FLIP_IN_X)
                         card3.animationXFlip(Flip.FLIP_IN_X)
                         card4.animationXFlip(Flip.FLIP_IN_X)
                         card5.animationXFlip(Flip.FLIP_IN_X)
                         card6.animationXFlip(Flip.FLIP_IN_X)
                         card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)
+                        card8.animationXFlip(Flip.FLIP_IN_X)*/
                         dioclick = 0
                         t1=0
                         t2=0
@@ -232,7 +242,7 @@ class JuegoNum : AppCompatActivity() {
         }
 
         card5.setOnClickListener {
-            card5.animationXFlip(Flip.FLIP_IN_Y)
+            //card5.animationXFlip(Flip.FLIP_IN_Y)
             card5.setImageResource(cuatro[numeroRando])
 
             dioclick=dioclick+1
@@ -243,8 +253,10 @@ class JuegoNum : AppCompatActivity() {
                 if (dioclick == 2) {
                     t2=4
                     if (t1 == t2) {
-                        card4.isVisible = false
-                        card5.isVisible = false
+                        //card4.isVisible = false
+                        //card5.isVisible = false
+                        card4.visibility = View.GONE
+                        card5.visibility = View.GONE
                         dioclick = 0
                         t1=0
                         t2=0
@@ -258,14 +270,14 @@ class JuegoNum : AppCompatActivity() {
                         card6.setImageResource(R.drawable.icon_card)
                         card7.setImageResource(R.drawable.icon_card)
                         card8.setImageResource(R.drawable.icon_card)
-                        card1.animationXFlip(Flip.FLIP_IN_X)
+                        /*card1.animationXFlip(Flip.FLIP_IN_X)
                         card2.animationXFlip(Flip.FLIP_IN_X)
                         card3.animationXFlip(Flip.FLIP_IN_X)
                         card4.animationXFlip(Flip.FLIP_IN_X)
                         card5.animationXFlip(Flip.FLIP_IN_X)
                         card6.animationXFlip(Flip.FLIP_IN_X)
                         card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)
+                        card8.animationXFlip(Flip.FLIP_IN_X)*/
                         dioclick = 0
                         t1=0
                         t2=0
@@ -278,7 +290,7 @@ class JuegoNum : AppCompatActivity() {
         }
 
         card6.setOnClickListener {
-            card6.animationXFlip(Flip.FLIP_IN_Y)
+            //card6.animationXFlip(Flip.FLIP_IN_Y)
             card6.setImageResource(uno[numeroRando])
 
             dioclick=dioclick+1
@@ -289,8 +301,10 @@ class JuegoNum : AppCompatActivity() {
                 if (dioclick == 2) {
                     t2=1
                     if (t1 == t2) {
-                        card1.isVisible = false
-                        card6.isVisible = false
+                        //card1.isVisible = false
+                        //card6.isVisible = false
+                        card1.visibility = View.GONE
+                        card6.visibility = View.GONE
                         dioclick = 0
                         t1=0
                         t2=0
@@ -304,14 +318,14 @@ class JuegoNum : AppCompatActivity() {
                         card6.setImageResource(R.drawable.icon_card)
                         card7.setImageResource(R.drawable.icon_card)
                         card8.setImageResource(R.drawable.icon_card)
-                        card1.animationXFlip(Flip.FLIP_IN_X)
+                        /*card1.animationXFlip(Flip.FLIP_IN_X)
                         card2.animationXFlip(Flip.FLIP_IN_X)
                         card3.animationXFlip(Flip.FLIP_IN_X)
                         card4.animationXFlip(Flip.FLIP_IN_X)
                         card5.animationXFlip(Flip.FLIP_IN_X)
                         card6.animationXFlip(Flip.FLIP_IN_X)
                         card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)
+                        card8.animationXFlip(Flip.FLIP_IN_X)*/
                         dioclick = 0
                         t1=0
                         t2=0
@@ -322,7 +336,7 @@ class JuegoNum : AppCompatActivity() {
         }
 
         card7.setOnClickListener {
-            card7.animationXFlip(Flip.FLIP_IN_Y)
+            //card7.animationXFlip(Flip.FLIP_IN_Y)
             card7.setImageResource(tres[numeroRando])
 
             dioclick=dioclick+1
@@ -333,8 +347,10 @@ class JuegoNum : AppCompatActivity() {
                 if (dioclick == 2) {
                     t2=3
                     if (t1 == t2) {
-                        card3.isVisible = false
-                        card7.isVisible = false
+                        //card3.isVisible = false
+                        //card7.isVisible = false
+                        card3.visibility = View.GONE
+                        card7.visibility = View.GONE
                         dioclick = 0
                         t1=0
                         t2=0
@@ -348,14 +364,14 @@ class JuegoNum : AppCompatActivity() {
                         card6.setImageResource(R.drawable.icon_card)
                         card7.setImageResource(R.drawable.icon_card)
                         card8.setImageResource(R.drawable.icon_card)
-                        card1.animationXFlip(Flip.FLIP_IN_X)
+                        /*card1.animationXFlip(Flip.FLIP_IN_X)
                         card2.animationXFlip(Flip.FLIP_IN_X)
                         card3.animationXFlip(Flip.FLIP_IN_X)
                         card4.animationXFlip(Flip.FLIP_IN_X)
                         card5.animationXFlip(Flip.FLIP_IN_X)
                         card6.animationXFlip(Flip.FLIP_IN_X)
                         card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)
+                        card8.animationXFlip(Flip.FLIP_IN_X)*/
                         dioclick = 0
                         t1=0
                         t2=0
@@ -368,7 +384,7 @@ class JuegoNum : AppCompatActivity() {
         }
 
         card8.setOnClickListener {
-            card8.animationXFlip(Flip.FLIP_IN_Y)
+            //card8.animationXFlip(Flip.FLIP_IN_Y)
             card8.setImageResource(dos[numeroRando])
 
             dioclick=dioclick+1
@@ -379,8 +395,10 @@ class JuegoNum : AppCompatActivity() {
                 if (dioclick == 2) {
                     t2=2
                     if (t1 == t2) {
-                        card2.isVisible = false
-                        card8.isVisible = false
+                        //card2.isVisible = false
+                        //card8.isVisible = false
+                        card2.visibility = View.GONE
+                        card8.visibility = View.GONE
                         dioclick = 0
                         t1=0
                         t2=0
@@ -394,14 +412,14 @@ class JuegoNum : AppCompatActivity() {
                         card6.setImageResource(R.drawable.icon_card)
                         card7.setImageResource(R.drawable.icon_card)
                         card8.setImageResource(R.drawable.icon_card)
-                        card1.animationXFlip(Flip.FLIP_IN_X)
+                        /*card1.animationXFlip(Flip.FLIP_IN_X)
                         card2.animationXFlip(Flip.FLIP_IN_X)
                         card3.animationXFlip(Flip.FLIP_IN_X)
                         card4.animationXFlip(Flip.FLIP_IN_X)
                         card5.animationXFlip(Flip.FLIP_IN_X)
                         card6.animationXFlip(Flip.FLIP_IN_X)
                         card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)
+                        card8.animationXFlip(Flip.FLIP_IN_X)*/
                         dioclick = 0
                         t1=0
                         t2=0

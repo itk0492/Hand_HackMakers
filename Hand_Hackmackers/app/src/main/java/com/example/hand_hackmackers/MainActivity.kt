@@ -11,7 +11,8 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
+//import androidx.appcompat.app.AppCompatActivity
+import android.support.v7.app.AppCompatActivity
 
 
 class MainActivity : AppCompatActivity() {

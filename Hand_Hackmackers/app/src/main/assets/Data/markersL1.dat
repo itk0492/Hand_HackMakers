@@ -1,0 +1,126 @@
+# Number of markers
+28
+
+# Entries for each marker. Format is:
+#
+# Name of pattern file (relative to this file)
+# Marker type (SINGLE)
+# Marker width in millimetres (floating point number)
+# Optional tokens:
+#     FILTER [x]   Enable pose estimate filtering for the preceding marker
+#                  x (optional) specifies the cutoff frequency. Default
+#                  value is AR_FILTER_TRANS_MAT_CUTOFF_FREQ_DEFAULT, which
+#                  at time of writing, equals 5.0.
+# A blank line
+
+../DataNFT/a_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/b_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/c_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/d_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/e_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/f_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/g_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/h_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/i_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/j_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/k_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/l_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/ll_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/m_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/n_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/ñ_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/o_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/p_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/q_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/r_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/s_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/t_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/u_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/v_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/w_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/x_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/y_marcador
+NFT
+FILTER 15.0
+
+../DataNFT/z_marcador
+NFT
+FILTER 15.0

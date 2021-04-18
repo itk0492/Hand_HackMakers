@@ -4,7 +4,8 @@ import android.content.Intent
 import android.graphics.Color
 import android.view.Window
 import android.view.WindowManager
-import androidx.core.content.ContextCompat.startActivity
+//import androidx.core.content.ContextCompat.startActivity
+import android.support.v4.content.ContextCompat.startActivity
 import com.daimajia.androidanimations.library.Techniques
 import com.viksaa.sssplash.lib.activity.AwesomeSplash
 import com.viksaa.sssplash.lib.cnst.Flags
@@ -14,7 +15,7 @@ import com.viksaa.sssplash.lib.model.ConfigSplash
 class Splash:AwesomeSplash() {
     override fun initSplash(configSplash: ConfigSplash?) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //Customize Circular Reveal
         configSplash!!.setBackgroundColor(R.color.white)
         configSplash.setAnimCircularRevealDuration(2000); //int ms

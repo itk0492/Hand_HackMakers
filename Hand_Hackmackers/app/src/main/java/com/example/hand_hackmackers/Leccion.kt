@@ -2,14 +2,16 @@ package com.example.hand_hackmackers
 
 import android.content.Intent
 import android.graphics.PorterDuff
-import androidx.appcompat.app.AppCompatActivity
+//import androidx.appcompat.app.AppCompatActivity
+import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.ContextCompat
-import androidx.core.view.isVisible
+//import androidx.core.content.ContextCompat
+//import androidx.core.view.isVisible
 
 class Leccion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,23 +37,31 @@ class Leccion : AppCompatActivity() {
         if(leccion==1)
         {
             titulo.text="Lección Abecedario"
-            iconoLeccAbc.isVisible=true
-            iconoJuegoAbc.isVisible=true
-            iconoLeccNum.isVisible=false
-            iconoJuegoNum.isVisible=false
+            //iconoLeccAbc.isVisible=true
+            //iconoJuegoAbc.isVisible=true
+            //iconoLeccNum.isVisible=false
+            //iconoJuegoNum.isVisible=false
+            iconoLeccAbc.visibility= View.VISIBLE
+            iconoJuegoAbc.visibility = View.VISIBLE
+            iconoLeccNum.visibility = View.GONE
+            iconoJuegoNum.visibility = View.GONE
         }
         else
         {
             titulo.text="Lección Números"
-            iconoLeccAbc.isVisible=false
-            iconoJuegoAbc.isVisible=false
-            iconoLeccNum.isVisible=true
-            iconoJuegoNum.isVisible=true
+            //iconoLeccAbc.isVisible=false
+            //iconoJuegoAbc.isVisible=false
+            //iconoLeccNum.isVisible=true
+            //iconoJuegoNum.isVisible=true
+            iconoLeccAbc.visibility= View.GONE
+            iconoJuegoAbc.visibility = View.GONE
+            iconoLeccNum.visibility = View.VISIBLE
+            iconoJuegoNum.visibility = View.VISIBLE
 
         }
 
         iconoLeccAbc.setOnClickListener {
-            val intent = Intent(this@Leccion, JuegoNum::class.java)
+            val intent = Intent(this@Leccion, Leccion_AR::class.java)
             intent.putExtra("leccion_valor", 1);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
             startActivity(intent)
@@ -59,7 +69,7 @@ class Leccion : AppCompatActivity() {
         }
 
         iconoLeccNum.setOnClickListener {
-            val intent = Intent(this@Leccion, JuegoNum::class.java)
+            val intent = Intent(this@Leccion, Leccion_AR::class.java)
             intent.putExtra("leccion_valor", 2);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
             startActivity(intent)

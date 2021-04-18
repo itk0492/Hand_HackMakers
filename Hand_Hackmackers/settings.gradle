@@ -1,2 +1,3 @@
+include ':aRBaseLib-release'
 include ':app'
 rootProject.name = "Hand_Hackmackers"
