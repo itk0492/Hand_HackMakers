@@ -6,4 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/baloo"
+        android:text="Lecciones"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/leccionAbc"
+        android:layout_width="170dp"
+        android:layout_height="176dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginLeft="134dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="104dp"
+        android:layout_toStartOf="@+id/leccion123"
+        android:layout_toLeftOf="@+id/leccion123"
+        app:srcCompat="@drawable/icon_abc" />
+
+    <ImageView
+        android:id="@+id/leccion123"
+        android:layout_width="189dp"
+        android:layout_height="191dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:layout_marginBottom="92dp"
+        app:srcCompat="@drawable/icon_num" />
+
+
 </RelativeLayout>
