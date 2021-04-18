@@ -24,6 +24,12 @@ class Splash:AwesomeSplash() {
         configSplash.setLogoSplash(R.mipmap.icon_hand); //or any other drawable
         configSplash.setAnimLogoSplashDuration(2000); //int ms
         configSplash.setAnimLogoSplashTechnique(Techniques.ZoomIn);
+
+        configSplash.setTitleSplash(" ");
+        configSplash.setTitleTextColor(R.color.verde_fuerte);
+        configSplash.setTitleTextSize(18f); //float value
+        configSplash.setAnimTitleDuration(0);
+        configSplash.setAnimTitleTechnique(Techniques.FadeIn);
     }
 
     override fun animationsFinished() {
