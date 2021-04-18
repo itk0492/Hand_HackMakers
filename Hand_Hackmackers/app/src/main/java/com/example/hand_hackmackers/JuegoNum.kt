@@ -32,12 +32,13 @@ class JuegoNum : AppCompatActivity() {
         val card7 = findViewById(R.id.imageView7) as ImageView
         val card8 = findViewById(R.id.imageView8) as ImageView
         var dioclick=0
-        var uno= arrayOf(R.drawable.icon_game_abc, R.drawable.icon_ra_abc, R.drawable.icon_game_abc)
-        var dos= arrayOf(R.drawable.icon_game_abc, R.drawable.icon_ra_abc, R.drawable.icon_game_abc)
-        var tres= arrayOf(R.drawable.icon_game_abc, R.drawable.icon_ra_abc, R.drawable.icon_game_abc)
-        var cuatro= arrayOf(R.drawable.icon_game_abc, R.drawable.icon_ra_abc, R.drawable.icon_game_abc)
-        var cinco= arrayOf(R.drawable.icon_game_abc, R.drawable.icon_ra_abc, R.drawable.icon_game_abc)
+        var uno= arrayOf(R.drawable.uno_sena, R.drawable.uno_obj, R.drawable.uno_num)
+        var dos= arrayOf(R.drawable.dos_sena, R.drawable.dos_obj, R.drawable.dos_num)
+        var tres= arrayOf(R.drawable.tres_sena, R.drawable.tres_obj, R.drawable.tres_num)
+        var cuatro= arrayOf(R.drawable.cuatro_sena, R.drawable.cuatro_obj, R.drawable.cuatro_num)
+        var cinco= arrayOf(R.drawable.cinco_sena, R.drawable.cinco_obj, R.drawable.cinco_num)
         val numeroRandom = Random().nextInt(0.. 2)
+        val numeroRando = Random().nextInt(0.. 2)
         var t1=0
         var t2=0
         var volteadas=0
@@ -232,7 +233,7 @@ class JuegoNum : AppCompatActivity() {
 
         card5.setOnClickListener {
             card5.animationXFlip(Flip.FLIP_IN_Y)
-            card5.setImageResource(cuatro[numeroRandom])
+            card5.setImageResource(cuatro[numeroRando])
 
             dioclick=dioclick+1
             if(dioclick==1){
@@ -278,7 +279,7 @@ class JuegoNum : AppCompatActivity() {
 
         card6.setOnClickListener {
             card6.animationXFlip(Flip.FLIP_IN_Y)
-            card6.setImageResource(uno[numeroRandom])
+            card6.setImageResource(uno[numeroRando])
 
             dioclick=dioclick+1
             if(dioclick==1){
@@ -322,7 +323,7 @@ class JuegoNum : AppCompatActivity() {
 
         card7.setOnClickListener {
             card7.animationXFlip(Flip.FLIP_IN_Y)
-            card7.setImageResource(tres[numeroRandom])
+            card7.setImageResource(tres[numeroRando])
 
             dioclick=dioclick+1
             if(dioclick==1){
@@ -368,7 +369,7 @@ class JuegoNum : AppCompatActivity() {
 
         card8.setOnClickListener {
             card8.animationXFlip(Flip.FLIP_IN_Y)
-            card8.setImageResource(dos[numeroRandom])
+            card8.setImageResource(dos[numeroRando])
 
             dioclick=dioclick+1
             if(dioclick==1){

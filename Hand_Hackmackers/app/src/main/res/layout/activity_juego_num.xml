@@ -33,6 +33,7 @@
         android:layout_marginLeft="532dp"
         android:layout_marginTop="112dp"
         android:layout_marginBottom="158dp"
+        android:background="#FFFFFF"
         app:srcCompat="@drawable/icon_card" />
 
     <ImageView
@@ -47,6 +48,7 @@
         android:layout_marginLeft="532dp"
         android:layout_marginTop="261dp"
         android:layout_marginBottom="9dp"
+        android:background="#FFFFFF"
         app:srcCompat="@drawable/icon_card" />
 
     <ImageView
@@ -59,6 +61,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:layout_marginTop="108dp"
+        android:background="#FFFFFF"
         app:srcCompat="@drawable/icon_card" />
 
     <ImageView
@@ -71,6 +74,7 @@
         android:layout_marginStart="214dp"
         android:layout_marginLeft="214dp"
         android:layout_marginTop="111dp"
+        android:background="#FFFFFF"
         app:srcCompat="@drawable/icon_card" />
 
     <ImageView
@@ -85,6 +89,7 @@
         android:layout_marginLeft="214dp"
         android:layout_marginTop="261dp"
         android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
         app:srcCompat="@drawable/icon_card" />
 
     <ImageView
@@ -99,6 +104,7 @@
         android:layout_marginLeft="374dp"
         android:layout_marginTop="110dp"
         android:layout_marginBottom="160dp"
+        android:background="#FFFFFF"
         app:srcCompat="@drawable/icon_card" />
 
     <ImageView
@@ -113,6 +119,7 @@
         android:layout_marginLeft="373dp"
         android:layout_marginTop="261dp"
         android:layout_marginBottom="9dp"
+        android:background="#FFFFFF"
         app:srcCompat="@drawable/icon_card" />
 
     <ImageView
@@ -125,6 +132,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:layout_marginTop="255dp"
+        android:background="#FFFFFF"
         app:srcCompat="@drawable/icon_card" />
 
 </RelativeLayout>
