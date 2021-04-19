@@ -1,10 +1,13 @@
 package com.example.hand_hackmackers
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
+import android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
 //import androidx.appcompat.app.AppCompatActivity
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.view.View
 import android.view.WindowManager
@@ -16,10 +19,14 @@ import android.widget.Toast
 //import com.rommansabbir.animationx.animationXFlip
 import java.util.*
 
+
 class JuegoNum : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_juego_num)
+        var handler: Handler = Handler()
+
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
 
         getWindow().setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -53,6 +60,7 @@ class JuegoNum : AppCompatActivity() {
            // card1.animationXFlip(Flip.FLIP_IN_Y)
             card1.setImageResource(uno[numeroRandom])
 
+
             dioclick=dioclick+1
 
             if(dioclick==1){
@@ -64,11 +72,25 @@ class JuegoNum : AppCompatActivity() {
                     if (t1 == t2) {
                         //card1.isVisible = false
                         //card6.isVisible = false
-                        card1.visibility = View.GONE
-                        card6.visibility = View.GONE
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                card1.visibility = View.GONE
+                                card6.visibility = View.GONE
+                            }
+                        }, 3000)
+                        //card1.visibility = View.GONE
+                        //card6.visibility = View.GONE
                         dioclick = 0
                         t1=0
                         t2=0
+                        volteadas += 1
+                        if(volteadas==4)
+                        {
+                            val intent = Intent(this@JuegoNum, Felicidades::class.java)
+                            intent.putExtra("leccion_valor", 2);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                            startActivity(intent)
+                        }
                     } else {
                         card1.setImageResource(R.drawable.icon_card)
                         card2.setImageResource(R.drawable.icon_card)
@@ -111,12 +133,23 @@ class JuegoNum : AppCompatActivity() {
                     if (t1 == t2) {
                         //card2.isVisible = false
                         //card8.isVisible = false
-                        card2.visibility = View.GONE
-                        card8.visibility = View.GONE
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                card2.visibility = View.GONE
+                                card8.visibility = View.GONE
+                            }
+                        }, 3000)
                         dioclick = 0
                         t1=0
                         t2=0
-
+                        volteadas += 1
+                        if(volteadas==4)
+                        {
+                            val intent = Intent(this@JuegoNum, Felicidades::class.java)
+                            intent.putExtra("leccion_valor", 2);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                            startActivity(intent)
+                        }
                     } else {
                         card1.setImageResource(R.drawable.icon_card)
                         card2.setImageResource(R.drawable.icon_card)
@@ -159,12 +192,23 @@ class JuegoNum : AppCompatActivity() {
                     if (t1 == t2) {
                         //card3.isVisible = false
                         //card7.isVisible = false
-                        card3.visibility = View.GONE
-                        card7.visibility = View.GONE
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                card3.visibility = View.GONE
+                                card7.visibility = View.GONE
+                            }
+                        }, 3000)
                         dioclick = 0
                         t1=0
                         t2=0
-
+                        volteadas += 1
+                        if(volteadas==4)
+                        {
+                            val intent = Intent(this@JuegoNum, Felicidades::class.java)
+                            intent.putExtra("leccion_valor", 2);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                            startActivity(intent)
+                        }
                     } else {
                         card1.setImageResource(R.drawable.icon_card)
                         card2.setImageResource(R.drawable.icon_card)
@@ -207,12 +251,24 @@ class JuegoNum : AppCompatActivity() {
                     if (t1 == t2) {
                         //card4.isVisible = false
                         //card5.isVisible = false
-                        card4.visibility = View.GONE
-                        card5.visibility = View.GONE
+
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                card4.visibility = View.GONE
+                                card5.visibility = View.GONE
+                            }
+                        }, 3000)
                         dioclick = 0
                         t1=0
                         t2=0
-
+                        volteadas += 1
+                        if(volteadas==4)
+                        {
+                            val intent = Intent(this@JuegoNum, Felicidades::class.java)
+                            intent.putExtra("leccion_valor", 2);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                            startActivity(intent)
+                        }
                     } else {
                         card1.setImageResource(R.drawable.icon_card)
                         card2.setImageResource(R.drawable.icon_card)
@@ -255,12 +311,24 @@ class JuegoNum : AppCompatActivity() {
                     if (t1 == t2) {
                         //card4.isVisible = false
                         //card5.isVisible = false
-                        card4.visibility = View.GONE
-                        card5.visibility = View.GONE
+
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                card4.visibility = View.GONE
+                                card5.visibility = View.GONE
+                            }
+                        }, 3000)
                         dioclick = 0
                         t1=0
                         t2=0
-
+                        volteadas += 1
+                        if(volteadas==4)
+                        {
+                            val intent = Intent(this@JuegoNum, Felicidades::class.java)
+                            intent.putExtra("leccion_valor", 2);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                            startActivity(intent)
+                        }
                     } else {
                         card1.setImageResource(R.drawable.icon_card)
                         card2.setImageResource(R.drawable.icon_card)
@@ -303,12 +371,25 @@ class JuegoNum : AppCompatActivity() {
                     if (t1 == t2) {
                         //card1.isVisible = false
                         //card6.isVisible = false
-                        card1.visibility = View.GONE
-                        card6.visibility = View.GONE
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                card1.visibility = View.GONE
+                                card6.visibility = View.GONE
+                            }
+                        }, 3000)
+                        //card1.visibility = View.GONE
+                        //card6.visibility = View.GONE
                         dioclick = 0
                         t1=0
                         t2=0
-
+                        volteadas += 1
+                        if(volteadas==4)
+                        {
+                            val intent = Intent(this@JuegoNum, Felicidades::class.java)
+                            intent.putExtra("leccion_valor", 2);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                            startActivity(intent)
+                        }
                     } else {
                         card1.setImageResource(R.drawable.icon_card)
                         card2.setImageResource(R.drawable.icon_card)
@@ -349,12 +430,24 @@ class JuegoNum : AppCompatActivity() {
                     if (t1 == t2) {
                         //card3.isVisible = false
                         //card7.isVisible = false
-                        card3.visibility = View.GONE
-                        card7.visibility = View.GONE
+
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                card3.visibility = View.GONE
+                                card7.visibility = View.GONE
+                            }
+                        }, 3000)
                         dioclick = 0
                         t1=0
                         t2=0
-
+                        volteadas += 1
+                        if(volteadas==4)
+                        {
+                            val intent = Intent(this@JuegoNum, Felicidades::class.java)
+                            intent.putExtra("leccion_valor", 2);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                            startActivity(intent)
+                        }
                     } else {
                         card1.setImageResource(R.drawable.icon_card)
                         card2.setImageResource(R.drawable.icon_card)
@@ -397,12 +490,25 @@ class JuegoNum : AppCompatActivity() {
                     if (t1 == t2) {
                         //card2.isVisible = false
                         //card8.isVisible = false
-                        card2.visibility = View.GONE
-                        card8.visibility = View.GONE
+
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                card2.visibility = View.GONE
+                                card8.visibility = View.GONE
+                            }
+                        }, 3000)
+
                         dioclick = 0
                         t1=0
                         t2=0
-
+                        volteadas += 1
+                        if(volteadas==4)
+                        {
+                            val intent = Intent(this@JuegoNum, Felicidades::class.java)
+                            intent.putExtra("leccion_valor", 2);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                            startActivity(intent)
+                        }
                     } else {
                         card1.setImageResource(R.drawable.icon_card)
                         card2.setImageResource(R.drawable.icon_card)
@@ -429,6 +535,13 @@ class JuegoNum : AppCompatActivity() {
             }
 
             //Toast.makeText(this@MainActivity, "You clicked 1", Toast.LENGTH_SHORT).show()
+        }
+        fun onBackPressed() {
+            super.onBackPressed()
+            val intent = Intent(this@JuegoNum,Leccion::class.java)
+            intent.putExtra("leccion", 2)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+            startActivity(intent)
         }
     }
 }

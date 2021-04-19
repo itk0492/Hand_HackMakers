@@ -2,4 +2,7 @@
     <string name="app_name">Hand_Hackmackers</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="has_terminado_el_juego">Has terminado el juego.</string>
+    <string name="felicidades">¡Felicidades!</string>
+    <string name="siguiente">Siguiente</string>
 </resources>
