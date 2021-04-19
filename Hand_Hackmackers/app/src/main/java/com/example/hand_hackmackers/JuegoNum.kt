@@ -54,7 +54,7 @@ class JuegoNum : AppCompatActivity() {
         //val tarjetasRandom = List(2) { Random().nextInt(1.. 8) }
 
         Log.i("JuegoNum",""+numeroRandom)
-
+        Log.i("JuegoNum",""+numeroRando)
 
         card1.setOnClickListener {
            // card1.animationXFlip(Flip.FLIP_IN_Y)
@@ -92,25 +92,31 @@ class JuegoNum : AppCompatActivity() {
                             startActivity(intent)
                         }
                     } else {
-                        card1.setImageResource(R.drawable.icon_card)
-                        card2.setImageResource(R.drawable.icon_card)
-                        card3.setImageResource(R.drawable.icon_card)
-                        card4.setImageResource(R.drawable.icon_card)
-                        card5.setImageResource(R.drawable.icon_card)
-                        card6.setImageResource(R.drawable.icon_card)
-                        card7.setImageResource(R.drawable.icon_card)
-                        card8.setImageResource(R.drawable.icon_card)
-                        /*card1.animationXFlip(Flip.FLIP_IN_X)
-                        card2.animationXFlip(Flip.FLIP_IN_X)
-                        card3.animationXFlip(Flip.FLIP_IN_X)
-                        card4.animationXFlip(Flip.FLIP_IN_X)
-                        card5.animationXFlip(Flip.FLIP_IN_X)
-                        card6.animationXFlip(Flip.FLIP_IN_X)
-                        card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)*/
-                        dioclick = 0
-                        t1=0
-                        t2=0
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                Log.i("segunda_tarjeta", "Aquí debería salir un delay")
+                                card1.setImageResource(R.drawable.icon_card)
+                                card2.setImageResource(R.drawable.icon_card)
+                                card3.setImageResource(R.drawable.icon_card)
+                                card4.setImageResource(R.drawable.icon_card)
+                                card5.setImageResource(R.drawable.icon_card)
+                                card6.setImageResource(R.drawable.icon_card)
+                                card7.setImageResource(R.drawable.icon_card)
+                                card8.setImageResource(R.drawable.icon_card)
+                                /*card1.animationXFlip(Flip.FLIP_IN_X)
+                                card2.animationXFlip(Flip.FLIP_IN_X)
+                                card3.animationXFlip(Flip.FLIP_IN_X)
+                                card4.animationXFlip(Flip.FLIP_IN_X)
+                                card5.animationXFlip(Flip.FLIP_IN_X)
+                                card6.animationXFlip(Flip.FLIP_IN_X)
+                                card7.animationXFlip(Flip.FLIP_IN_X)
+                                card8.animationXFlip(Flip.FLIP_IN_X)*/
+                                dioclick = 0
+                                t1=0
+                                t2=0
+                            }
+                        }, 3000)
+
                     }
 
                 }
@@ -151,25 +157,30 @@ class JuegoNum : AppCompatActivity() {
                             startActivity(intent)
                         }
                     } else {
-                        card1.setImageResource(R.drawable.icon_card)
-                        card2.setImageResource(R.drawable.icon_card)
-                        card3.setImageResource(R.drawable.icon_card)
-                        card4.setImageResource(R.drawable.icon_card)
-                        card5.setImageResource(R.drawable.icon_card)
-                        card6.setImageResource(R.drawable.icon_card)
-                        card7.setImageResource(R.drawable.icon_card)
-                        card8.setImageResource(R.drawable.icon_card)
-                        /*card1.animationXFlip(Flip.FLIP_IN_X)
-                        card2.animationXFlip(Flip.FLIP_IN_X)
-                        card3.animationXFlip(Flip.FLIP_IN_X)
-                        card4.animationXFlip(Flip.FLIP_IN_X)
-                        card5.animationXFlip(Flip.FLIP_IN_X)
-                        card6.animationXFlip(Flip.FLIP_IN_X)
-                        card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)*/
-                        dioclick = 0
-                        t1=0
-                        t2=0
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                Log.i("segunda_tarjeta", "Aquí debería salir un delay")
+                                card1.setImageResource(R.drawable.icon_card)
+                                card2.setImageResource(R.drawable.icon_card)
+                                card3.setImageResource(R.drawable.icon_card)
+                                card4.setImageResource(R.drawable.icon_card)
+                                card5.setImageResource(R.drawable.icon_card)
+                                card6.setImageResource(R.drawable.icon_card)
+                                card7.setImageResource(R.drawable.icon_card)
+                                card8.setImageResource(R.drawable.icon_card)
+                                /*card1.animationXFlip(Flip.FLIP_IN_X)
+                                card2.animationXFlip(Flip.FLIP_IN_X)
+                                card3.animationXFlip(Flip.FLIP_IN_X)
+                                card4.animationXFlip(Flip.FLIP_IN_X)
+                                card5.animationXFlip(Flip.FLIP_IN_X)
+                                card6.animationXFlip(Flip.FLIP_IN_X)
+                                card7.animationXFlip(Flip.FLIP_IN_X)
+                                card8.animationXFlip(Flip.FLIP_IN_X)*/
+                                dioclick = 0
+                                t1=0
+                                t2=0
+                            }
+                        }, 3000)
                     }
 
                 }
@@ -210,25 +221,30 @@ class JuegoNum : AppCompatActivity() {
                             startActivity(intent)
                         }
                     } else {
-                        card1.setImageResource(R.drawable.icon_card)
-                        card2.setImageResource(R.drawable.icon_card)
-                        card3.setImageResource(R.drawable.icon_card)
-                        card4.setImageResource(R.drawable.icon_card)
-                        card5.setImageResource(R.drawable.icon_card)
-                        card6.setImageResource(R.drawable.icon_card)
-                        card7.setImageResource(R.drawable.icon_card)
-                        card8.setImageResource(R.drawable.icon_card)
-                        /*card1.animationXFlip(Flip.FLIP_IN_X)
-                        card2.animationXFlip(Flip.FLIP_IN_X)
-                        card3.animationXFlip(Flip.FLIP_IN_X)
-                        card4.animationXFlip(Flip.FLIP_IN_X)
-                        card5.animationXFlip(Flip.FLIP_IN_X)
-                        card6.animationXFlip(Flip.FLIP_IN_X)
-                        card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)*/
-                        dioclick = 0
-                        t1=0
-                        t2=0
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                Log.i("segunda_tarjeta", "Aquí debería salir un delay")
+                                card1.setImageResource(R.drawable.icon_card)
+                                card2.setImageResource(R.drawable.icon_card)
+                                card3.setImageResource(R.drawable.icon_card)
+                                card4.setImageResource(R.drawable.icon_card)
+                                card5.setImageResource(R.drawable.icon_card)
+                                card6.setImageResource(R.drawable.icon_card)
+                                card7.setImageResource(R.drawable.icon_card)
+                                card8.setImageResource(R.drawable.icon_card)
+                                /*card1.animationXFlip(Flip.FLIP_IN_X)
+                                card2.animationXFlip(Flip.FLIP_IN_X)
+                                card3.animationXFlip(Flip.FLIP_IN_X)
+                                card4.animationXFlip(Flip.FLIP_IN_X)
+                                card5.animationXFlip(Flip.FLIP_IN_X)
+                                card6.animationXFlip(Flip.FLIP_IN_X)
+                                card7.animationXFlip(Flip.FLIP_IN_X)
+                                card8.animationXFlip(Flip.FLIP_IN_X)*/
+                                dioclick = 0
+                                t1=0
+                                t2=0
+                            }
+                        }, 3000)
                     }
 
                 }
@@ -270,25 +286,30 @@ class JuegoNum : AppCompatActivity() {
                             startActivity(intent)
                         }
                     } else {
-                        card1.setImageResource(R.drawable.icon_card)
-                        card2.setImageResource(R.drawable.icon_card)
-                        card3.setImageResource(R.drawable.icon_card)
-                        card4.setImageResource(R.drawable.icon_card)
-                        card5.setImageResource(R.drawable.icon_card)
-                        card6.setImageResource(R.drawable.icon_card)
-                        card7.setImageResource(R.drawable.icon_card)
-                        card8.setImageResource(R.drawable.icon_card)
-                        /*card1.animationXFlip(Flip.FLIP_IN_X)
-                        card2.animationXFlip(Flip.FLIP_IN_X)
-                        card3.animationXFlip(Flip.FLIP_IN_X)
-                        card4.animationXFlip(Flip.FLIP_IN_X)
-                        card5.animationXFlip(Flip.FLIP_IN_X)
-                        card6.animationXFlip(Flip.FLIP_IN_X)
-                        card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)*/
-                        dioclick = 0
-                        t1=0
-                        t2=0
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                Log.i("segunda_tarjeta", "Aquí debería salir un delay")
+                                card1.setImageResource(R.drawable.icon_card)
+                                card2.setImageResource(R.drawable.icon_card)
+                                card3.setImageResource(R.drawable.icon_card)
+                                card4.setImageResource(R.drawable.icon_card)
+                                card5.setImageResource(R.drawable.icon_card)
+                                card6.setImageResource(R.drawable.icon_card)
+                                card7.setImageResource(R.drawable.icon_card)
+                                card8.setImageResource(R.drawable.icon_card)
+                                /*card1.animationXFlip(Flip.FLIP_IN_X)
+                                card2.animationXFlip(Flip.FLIP_IN_X)
+                                card3.animationXFlip(Flip.FLIP_IN_X)
+                                card4.animationXFlip(Flip.FLIP_IN_X)
+                                card5.animationXFlip(Flip.FLIP_IN_X)
+                                card6.animationXFlip(Flip.FLIP_IN_X)
+                                card7.animationXFlip(Flip.FLIP_IN_X)
+                                card8.animationXFlip(Flip.FLIP_IN_X)*/
+                                dioclick = 0
+                                t1=0
+                                t2=0
+                            }
+                        }, 3000)
                     }
 
                 }
@@ -330,25 +351,30 @@ class JuegoNum : AppCompatActivity() {
                             startActivity(intent)
                         }
                     } else {
-                        card1.setImageResource(R.drawable.icon_card)
-                        card2.setImageResource(R.drawable.icon_card)
-                        card3.setImageResource(R.drawable.icon_card)
-                        card4.setImageResource(R.drawable.icon_card)
-                        card5.setImageResource(R.drawable.icon_card)
-                        card6.setImageResource(R.drawable.icon_card)
-                        card7.setImageResource(R.drawable.icon_card)
-                        card8.setImageResource(R.drawable.icon_card)
-                        /*card1.animationXFlip(Flip.FLIP_IN_X)
-                        card2.animationXFlip(Flip.FLIP_IN_X)
-                        card3.animationXFlip(Flip.FLIP_IN_X)
-                        card4.animationXFlip(Flip.FLIP_IN_X)
-                        card5.animationXFlip(Flip.FLIP_IN_X)
-                        card6.animationXFlip(Flip.FLIP_IN_X)
-                        card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)*/
-                        dioclick = 0
-                        t1=0
-                        t2=0
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                Log.i("segunda_tarjeta", "Aquí debería salir un delay")
+                                card1.setImageResource(R.drawable.icon_card)
+                                card2.setImageResource(R.drawable.icon_card)
+                                card3.setImageResource(R.drawable.icon_card)
+                                card4.setImageResource(R.drawable.icon_card)
+                                card5.setImageResource(R.drawable.icon_card)
+                                card6.setImageResource(R.drawable.icon_card)
+                                card7.setImageResource(R.drawable.icon_card)
+                                card8.setImageResource(R.drawable.icon_card)
+                                /*card1.animationXFlip(Flip.FLIP_IN_X)
+                                card2.animationXFlip(Flip.FLIP_IN_X)
+                                card3.animationXFlip(Flip.FLIP_IN_X)
+                                card4.animationXFlip(Flip.FLIP_IN_X)
+                                card5.animationXFlip(Flip.FLIP_IN_X)
+                                card6.animationXFlip(Flip.FLIP_IN_X)
+                                card7.animationXFlip(Flip.FLIP_IN_X)
+                                card8.animationXFlip(Flip.FLIP_IN_X)*/
+                                dioclick = 0
+                                t1=0
+                                t2=0
+                            }
+                        }, 3000)
                     }
 
                 }
@@ -391,25 +417,30 @@ class JuegoNum : AppCompatActivity() {
                             startActivity(intent)
                         }
                     } else {
-                        card1.setImageResource(R.drawable.icon_card)
-                        card2.setImageResource(R.drawable.icon_card)
-                        card3.setImageResource(R.drawable.icon_card)
-                        card4.setImageResource(R.drawable.icon_card)
-                        card5.setImageResource(R.drawable.icon_card)
-                        card6.setImageResource(R.drawable.icon_card)
-                        card7.setImageResource(R.drawable.icon_card)
-                        card8.setImageResource(R.drawable.icon_card)
-                        /*card1.animationXFlip(Flip.FLIP_IN_X)
-                        card2.animationXFlip(Flip.FLIP_IN_X)
-                        card3.animationXFlip(Flip.FLIP_IN_X)
-                        card4.animationXFlip(Flip.FLIP_IN_X)
-                        card5.animationXFlip(Flip.FLIP_IN_X)
-                        card6.animationXFlip(Flip.FLIP_IN_X)
-                        card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)*/
-                        dioclick = 0
-                        t1=0
-                        t2=0
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                Log.i("segunda_tarjeta", "Aquí debería salir un delay")
+                                card1.setImageResource(R.drawable.icon_card)
+                                card2.setImageResource(R.drawable.icon_card)
+                                card3.setImageResource(R.drawable.icon_card)
+                                card4.setImageResource(R.drawable.icon_card)
+                                card5.setImageResource(R.drawable.icon_card)
+                                card6.setImageResource(R.drawable.icon_card)
+                                card7.setImageResource(R.drawable.icon_card)
+                                card8.setImageResource(R.drawable.icon_card)
+                                /*card1.animationXFlip(Flip.FLIP_IN_X)
+                                card2.animationXFlip(Flip.FLIP_IN_X)
+                                card3.animationXFlip(Flip.FLIP_IN_X)
+                                card4.animationXFlip(Flip.FLIP_IN_X)
+                                card5.animationXFlip(Flip.FLIP_IN_X)
+                                card6.animationXFlip(Flip.FLIP_IN_X)
+                                card7.animationXFlip(Flip.FLIP_IN_X)
+                                card8.animationXFlip(Flip.FLIP_IN_X)*/
+                                dioclick = 0
+                                t1=0
+                                t2=0
+                            }
+                        }, 3000)
                     }
 
                 }
@@ -449,25 +480,30 @@ class JuegoNum : AppCompatActivity() {
                             startActivity(intent)
                         }
                     } else {
-                        card1.setImageResource(R.drawable.icon_card)
-                        card2.setImageResource(R.drawable.icon_card)
-                        card3.setImageResource(R.drawable.icon_card)
-                        card4.setImageResource(R.drawable.icon_card)
-                        card5.setImageResource(R.drawable.icon_card)
-                        card6.setImageResource(R.drawable.icon_card)
-                        card7.setImageResource(R.drawable.icon_card)
-                        card8.setImageResource(R.drawable.icon_card)
-                        /*card1.animationXFlip(Flip.FLIP_IN_X)
-                        card2.animationXFlip(Flip.FLIP_IN_X)
-                        card3.animationXFlip(Flip.FLIP_IN_X)
-                        card4.animationXFlip(Flip.FLIP_IN_X)
-                        card5.animationXFlip(Flip.FLIP_IN_X)
-                        card6.animationXFlip(Flip.FLIP_IN_X)
-                        card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)*/
-                        dioclick = 0
-                        t1=0
-                        t2=0
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                Log.i("segunda_tarjeta", "Aquí debería salir un delay")
+                                card1.setImageResource(R.drawable.icon_card)
+                                card2.setImageResource(R.drawable.icon_card)
+                                card3.setImageResource(R.drawable.icon_card)
+                                card4.setImageResource(R.drawable.icon_card)
+                                card5.setImageResource(R.drawable.icon_card)
+                                card6.setImageResource(R.drawable.icon_card)
+                                card7.setImageResource(R.drawable.icon_card)
+                                card8.setImageResource(R.drawable.icon_card)
+                                /*card1.animationXFlip(Flip.FLIP_IN_X)
+                                card2.animationXFlip(Flip.FLIP_IN_X)
+                                card3.animationXFlip(Flip.FLIP_IN_X)
+                                card4.animationXFlip(Flip.FLIP_IN_X)
+                                card5.animationXFlip(Flip.FLIP_IN_X)
+                                card6.animationXFlip(Flip.FLIP_IN_X)
+                                card7.animationXFlip(Flip.FLIP_IN_X)
+                                card8.animationXFlip(Flip.FLIP_IN_X)*/
+                                dioclick = 0
+                                t1=0
+                                t2=0
+                            }
+                        }, 3000)
                     }
 
                 }
@@ -510,25 +546,30 @@ class JuegoNum : AppCompatActivity() {
                             startActivity(intent)
                         }
                     } else {
-                        card1.setImageResource(R.drawable.icon_card)
-                        card2.setImageResource(R.drawable.icon_card)
-                        card3.setImageResource(R.drawable.icon_card)
-                        card4.setImageResource(R.drawable.icon_card)
-                        card5.setImageResource(R.drawable.icon_card)
-                        card6.setImageResource(R.drawable.icon_card)
-                        card7.setImageResource(R.drawable.icon_card)
-                        card8.setImageResource(R.drawable.icon_card)
-                        /*card1.animationXFlip(Flip.FLIP_IN_X)
-                        card2.animationXFlip(Flip.FLIP_IN_X)
-                        card3.animationXFlip(Flip.FLIP_IN_X)
-                        card4.animationXFlip(Flip.FLIP_IN_X)
-                        card5.animationXFlip(Flip.FLIP_IN_X)
-                        card6.animationXFlip(Flip.FLIP_IN_X)
-                        card7.animationXFlip(Flip.FLIP_IN_X)
-                        card8.animationXFlip(Flip.FLIP_IN_X)*/
-                        dioclick = 0
-                        t1=0
-                        t2=0
+                        Handler(Looper.getMainLooper()).postDelayed(object: Runnable {
+                            override fun run() {
+                                Log.i("segunda_tarjeta", "Aquí debería salir un delay")
+                                card1.setImageResource(R.drawable.icon_card)
+                                card2.setImageResource(R.drawable.icon_card)
+                                card3.setImageResource(R.drawable.icon_card)
+                                card4.setImageResource(R.drawable.icon_card)
+                                card5.setImageResource(R.drawable.icon_card)
+                                card6.setImageResource(R.drawable.icon_card)
+                                card7.setImageResource(R.drawable.icon_card)
+                                card8.setImageResource(R.drawable.icon_card)
+                                /*card1.animationXFlip(Flip.FLIP_IN_X)
+                                card2.animationXFlip(Flip.FLIP_IN_X)
+                                card3.animationXFlip(Flip.FLIP_IN_X)
+                                card4.animationXFlip(Flip.FLIP_IN_X)
+                                card5.animationXFlip(Flip.FLIP_IN_X)
+                                card6.animationXFlip(Flip.FLIP_IN_X)
+                                card7.animationXFlip(Flip.FLIP_IN_X)
+                                card8.animationXFlip(Flip.FLIP_IN_X)*/
+                                dioclick = 0
+                                t1=0
+                                t2=0
+                            }
+                        }, 3000)
                     }
 
                 }
