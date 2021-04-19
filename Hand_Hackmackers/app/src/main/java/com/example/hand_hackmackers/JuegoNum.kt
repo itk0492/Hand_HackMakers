@@ -577,13 +577,14 @@ class JuegoNum : AppCompatActivity() {
 
             //Toast.makeText(this@MainActivity, "You clicked 1", Toast.LENGTH_SHORT).show()
         }
-        fun onBackPressed() {
-            super.onBackPressed()
-            val intent = Intent(this@JuegoNum,Leccion::class.java)
-            intent.putExtra("leccion", 2)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
-            startActivity(intent)
-        }
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val intent = Intent(this@JuegoNum,Leccion::class.java)
+        intent.putExtra("leccion", 2)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        startActivity(intent)
     }
 }
 

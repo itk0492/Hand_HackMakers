@@ -56,7 +56,7 @@ class Leccion : AppCompatActivity() {
         }
 
         iconoLecc.setOnClickListener {
-            iconoLecc.setColorFilter(0x206a5d.toInt(), PorterDuff.Mode.MULTIPLY);
+            //iconoLecc.setColorFilter(0x206a5d.toInt(), PorterDuff.Mode.MULTIPLY);
             if(leccion==1){
                 val intent = Intent(this@Leccion, Leccion_AR::class.java)
                 intent.putExtra("leccion_valor", 1)
@@ -76,7 +76,7 @@ class Leccion : AppCompatActivity() {
         }
 
         iconoJuego.setOnClickListener {
-            iconoJuego.setColorFilter(0x206a5d.toInt(), PorterDuff.Mode.MULTIPLY);
+           // iconoJuego.setColorFilter(0x206a5d.toInt(), PorterDuff.Mode.MULTIPLY);
             if(leccion==1){
                 val intent = Intent(this@Leccion, Leccion_AR::class.java)
                 intent.putExtra("leccion_valor", 1)
@@ -93,13 +93,12 @@ class Leccion : AppCompatActivity() {
                 //Toast.makeText(this@MainActivity, "You clicked 123", Toast.LENGTH_SHORT).show()
             }
         }
+    }
 
-        fun onBackPressed() {
-            super.onBackPressed()
-            val intent = Intent(this@Leccion,MainActivity::class.java)
-            intent.putExtra("leccion", 2)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
-            startActivity(intent)
-        }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val intent = Intent(this@Leccion,MainActivity::class.java)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        startActivity(intent)
     }
 }

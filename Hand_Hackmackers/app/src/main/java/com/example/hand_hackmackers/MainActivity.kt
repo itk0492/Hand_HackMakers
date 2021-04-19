@@ -18,18 +18,19 @@ import android.support.v7.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.activity_main)
+
         getWindow().setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         );
-        setContentView(R.layout.activity_main)
+
 
         val leccionAbc = findViewById(R.id.leccionAbc) as ImageView
         val leccionNum = findViewById(R.id.leccion123) as ImageView
 
         leccionAbc.setOnClickListener {
-            leccionAbc.setColorFilter(0x206a5d.toInt(), PorterDuff.Mode.MULTIPLY);
+           // leccionAbc.setColorFilter(0x206a5d.toInt(), PorterDuff.Mode.MULTIPLY);
             val intent = Intent(this@MainActivity, Leccion::class.java)
             intent.putExtra("leccion_valor", 1);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
@@ -39,12 +40,14 @@ class MainActivity : AppCompatActivity() {
 
 
         leccionNum.setOnClickListener {
-            leccionNum.setColorFilter(0x206a5d.toInt(), PorterDuff.Mode.MULTIPLY);
+            //leccionNum.setColorFilter(0x206a5d.toInt(), PorterDuff.Mode.MULTIPLY);
             val intent = Intent(this@MainActivity, Leccion::class.java)
             intent.putExtra("leccion_valor", 2);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
             startActivity(intent)
         //Toast.makeText(this@MainActivity, "You clicked 123", Toast.LENGTH_SHORT).show()
         }
+
+
     }
 }
