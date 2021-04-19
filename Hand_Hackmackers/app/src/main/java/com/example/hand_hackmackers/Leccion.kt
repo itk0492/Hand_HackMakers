@@ -59,14 +59,16 @@ class Leccion : AppCompatActivity() {
             iconoLecc.setColorFilter(0x206a5d.toInt(), PorterDuff.Mode.MULTIPLY);
             if(leccion==1){
                 val intent = Intent(this@Leccion, Leccion_AR::class.java)
-                intent.putExtra("leccion_valor", 1);
+                intent.putExtra("leccion_valor", 1)
+                intent.putExtra("juego", 0)
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 startActivity(intent)
                 //Toast.makeText(this@MainActivity, "You clicked 123", Toast.LENGTH_SHORT).show()
             }
             else{
                 val intent = Intent(this@Leccion, Leccion_AR::class.java)
-                intent.putExtra("leccion_valor", 2);
+                intent.putExtra("leccion_valor", 2)
+                intent.putExtra("juego", 0)
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 startActivity(intent)
                 //Toast.makeText(this@MainActivity, "You clicked 123", Toast.LENGTH_SHORT).show()
@@ -76,15 +78,16 @@ class Leccion : AppCompatActivity() {
         iconoJuego.setOnClickListener {
             iconoJuego.setColorFilter(0x206a5d.toInt(), PorterDuff.Mode.MULTIPLY);
             if(leccion==1){
-                val intent = Intent(this@Leccion, JuegoNum::class.java)
-                intent.putExtra("leccion_valor", 1);
+                val intent = Intent(this@Leccion, Leccion_AR::class.java)
+                intent.putExtra("leccion_valor", 1)
+                intent.putExtra("juego", 1)
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 startActivity(intent)
                 //Toast.makeText(this@MainActivity, "You clicked 123", Toast.LENGTH_SHORT).show()
             }
             else{
                 val intent = Intent(this@Leccion, JuegoNum::class.java)
-                intent.putExtra("leccion_valor", 2);
+                intent.putExtra("leccion_valor", 2)
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 startActivity(intent)
                 //Toast.makeText(this@MainActivity, "You clicked 123", Toast.LENGTH_SHORT).show()
