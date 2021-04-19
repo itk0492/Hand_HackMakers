@@ -46,6 +46,7 @@
             android:name=".Leccion_AR"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="landscape" />
+
     </application>
 
 </manifest>
